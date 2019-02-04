@@ -7,7 +7,7 @@
 
 html {
 	box-sizing:border-box;
-	background:linear-gradient(rgb(153,153,153), rgb(102,102,102));
+	background-color:rgb(153,153,153);
 }
 
 *, *:before, *:after {
@@ -84,7 +84,7 @@ html {
 	font-family:'Open Sans', sans-serif;
 	font-size:1em;
 	line-height:1.5em;
-	text-align:justify;
+	text-align:center;
 }
 
 .experience > div > a:hover > p {
@@ -155,7 +155,7 @@ html {
 
 html {
 	box-sizing:border-box;
-	background:linear-gradient(rgb(153,153,153), rgb(102,102,102));
+	background-color:rgb(153,153,153);
 }
 
 *, *:before, *:after {
