@@ -7,7 +7,7 @@
 
 html {
 	box-sizing:border-box;
-	background-color:rgb(189,175,151);
+	background:linear-gradient(rgb(153,153,153), rgb(102,102,102));
 }
 
 *, *:before, *:after {
@@ -20,126 +20,128 @@ html {
 	flex-wrap:wrap;
 	justify-content:space-around;
 	width:90%;
-	margin:0 auto;
+	margin:10px auto;
+	background-color:rgb(255,255,255);
+	border-radius:5px;
+}
+
+.header {
+	background:url(background.jpg);
+	background-position:center center;
+	border-top-left-radius:5px;
+	border-top-right-radius:5px;
+	border-bottom:5px double rgb(255,255,255);
 }
 
 .header > h1 {
-	padding:10px;
-	font-family:'Vast Shadow', cursive;
-	font-size:3em;
+	padding:30px 20px;
+	font-family:'Bungee Inline', cursive;
+	font-size:5em;
 	font-weight:normal;
 	text-transform:uppercase;
 	text-align:center;
+	color:rgb(255,255,255);
 }
 
-.blocks {
+.experience {
 	display:flex;
 	flex-direction:row;
 	flex-wrap:wrap;
-	justify-content:space-between;
-	margin:10px 10px 20px 10px;
+	justify-content:space-around;
+	padding:0 20px;
 }
 
-.blocks > div {
-	width:32%;
-	text-align:center;
-	background-color:rgb(255,255,255);
-	border-bottom:2px solid rgb(102,102,102);
-	border-top-left-radius:5px;
-	border-top-right-radius:5px;
-	box-shadow:2px 2px rgba(153,153,153,0.75);
+.experience > div {
+	width:30%;
+	border:1px solid rgb(153,153,153);
+	border-radius:5px;
 }
 
-.resume {
-	background:linear-gradient(rgba(175,20,59,1), rgba(175,20,59,0.75));
-	box-shadow:1px 1px rgba(153,153,153,0.75);
-}
-
-.marketing {
-	background:linear-gradient(rgba(231,86,72,1), rgba(231,86,72,0.75));
-	box-shadow:1px 1px rgba(153,153,153,0.75);
-}
-
-.development {
-	background:linear-gradient(rgba(245,211,0,1), rgba(245,211,0,0.75));
-	box-shadow:1px 1px rgba(153,153,153,0.75);
-}
-
-.design {
-	background:linear-gradient(rgba(223,187,0,1), rgba(223,187,0,0.75));
-	box-shadow:1px 1px rgba(153,153,153,0.75);
-}
-
-.social {
-	background:linear-gradient(rgba(39,108,95,1), rgba(39,108,95,0.75));
-	box-shadow:1px 1px rgba(153,153,153,0.75);
-}
-
-.photography {
-	background:linear-gradient(rgba(179,198,211,1), rgba(179,198,211,0.75));
-	box-shadow:1px 1px rgba(153,153,153,0.75);
-}
-
-.paper {
-	background:linear-gradient(rgba(127,139,194,1), rgba(127,139,194,0.75));
-	box-shadow:1px 1px rgba(153,153,153,0.75);
-}
-
-.inspiration {
-	background:linear-gradient(rgba(88,82,137,1), rgba(88,82,137,0.75));
-	box-shadow:1px 1px rgba(153,153,153,0.75);
-}
-
-.contact {
-	background:linear-gradient(rgba(145,112,100,1), rgba(145,112,100,0.75));
-	box-shadow:1px 1px rgba(153,153,153,0.75);
+.experience > div:hover {
+	border:1px solid rgb(245,211,0);
 }
 
 .link {
 	text-decoration:none;
-	color:rgb(153,153,153);
+	color:rgb(0,0,0);
 }
 
-.blocks > div > a {
-	padding:10px;
-	font-size:2em;
-	text-decoration:none;
-	color:rgb(255,255,255);
-	border-right:1px solid rgb(153,153,153);
-	border-bottom:1px solid rgb(153,153,153);
-	border-radius:5px;
-}
-
-.blocks > div > h2 {
-	padding-top:20px;
+.experience > div > a > h2 {
+	padding:20px 10px 0 10px;
 	font-family:'Open Sans', sans-serif;
-	font-size:1.2em;
+	font-size:1.1em;
 	font-weight:bold;
 	text-transform:uppercase;
+	text-align:center;
 }
 
-.blocks > div > p {
+.experience > div > a:hover > h2 {
+	color:rgb(245,211,0);
+}
+
+.experience > div > a > p {
 	padding:10px 20px 20px 20px;
 	font-family:'Open Sans', sans-serif;
 	font-size:1em;
 	line-height:1.5em;
-	text-align:left;
-	color:rgb(102,102,102);
+	text-align:justify;
 }
 
-.quote > p {
-	font-family:'Open Sans', sans-serif;
-	font-size:1.1em;
-	line-height:1.7em;
-	text-align:center;
+.experience > div > a:hover > p {
+	color:rgb(153,153,153);
 }
 
-.footer > p {
+.summary > p, .projects > p {
 	padding:20px;
 	font-family:'Open Sans', sans-serif;
+	font-size:1em;
+	line-height:1.5em;
+	text-align:justify;
+}
+
+.projects > p > a:hover {
+	color:rgb(245,211,0);
+}
+
+.summary > img {
+	width:120px;
+	margin:20px;
+	padding:5px;
+	float:left;
+	border:1px solid rgb(153,153,153);
+	border-radius:50%;	
+}
+
+.projects > img {
+	width:120px;
+	margin:20px;
+	padding:5px;
+	float:right;
+	border:1px solid rgb(153,153,153);
+	border-radius:50%;
+}
+
+.footer {
+	display:flex;
+	flex-direction:row;
+	flex-wrap:wrap;
+	justify-content:space-between;
+	padding:10px 20px 20px 20px;
+}
+
+.footer > div > p {
+	font-family:'Open Sans', sans-serif;
 	font-size:0.9em;
-	line-height:1.4em;
-	text-align:center;
+}
+
+.footer > div > a {
+	margin-right:10px;
+	font-size:1.2em;
+	color:rgb(0,0,0);
+}
+
+.footer > div > a:hover {
+	color:rgb(245,211,0);
 }
 
 }
@@ -153,7 +155,7 @@ html {
 
 html {
 	box-sizing:border-box;
-	background-color:rgb(189,175,151);
+	background:linear-gradient(rgb(153,153,153), rgb(102,102,102));
 }
 
 *, *:before, *:after {
@@ -166,128 +168,137 @@ html {
 	flex-wrap:wrap;
 	justify-content:space-around;
 	width:90%;
-	margin:0 auto;
+	margin:10px auto;
+	background-color:rgb(255,255,255);
+	border-radius:5px;
+}
+
+.header {
+	background:url(background.jpg);
+	background-position:center center;
+	border-top-left-radius:5px;
+	border-top-right-radius:5px;
+	border-bottom:5px double rgb(255,255,255);
 }
 
 .header > h1 {
-	padding:10px;
-	font-family:'Vast Shadow', cursive;
-	font-size:3em;
+	padding:30px 20px;
+	font-family:'Bungee Inline', cursive;
+	font-size:4em;
 	font-weight:normal;
 	text-transform:uppercase;
 	text-align:center;
+	color:rgb(255,255,255);
 }
 
-.blocks {
+.experience {
 	display:flex;
 	flex-direction:column;
 	flex-wrap:wrap;
-	justify-content:space-between;
-	margin:10px 10px -10px 10px;
+	justify-content:space-around;
+	padding:0 40px 0 20px;
 }
 
-.blocks > div {
+.experience > div {
 	width:100%;
 	margin:10px;
-	text-align:center;
-	background-color:rgb(255,255,255);
-	border-bottom:2px solid rgb(102,102,102);
-	border-top-left-radius:5px;
-	border-top-right-radius:5px;
-	box-shadow:2px 2px rgba(153,153,153,0.75);
+	border:1px solid rgb(153,153,153);
+	border-radius:5px;
 }
 
-.resume {
-	background:linear-gradient(rgba(175,20,59,1), rgba(175,20,59,0.75));
-	box-shadow:1px 1px rgba(153,153,153,0.75);
-}
-
-.marketing {
-	background:linear-gradient(rgba(231,86,72,1), rgba(231,86,72,0.75));
-	box-shadow:1px 1px rgba(153,153,153,0.75);
-}
-
-.development {
-	background:linear-gradient(rgba(245,211,0,1), rgba(245,211,0,0.75));
-	box-shadow:1px 1px rgba(153,153,153,0.75);
-}
-
-.design {
-	background:linear-gradient(rgba(223,187,0,1), rgba(223,187,0,0.75));
-	box-shadow:1px 1px rgba(153,153,153,0.75);
-}
-
-.social {
-	background:linear-gradient(rgba(39,108,95,1), rgba(39,108,95,0.75));
-	box-shadow:1px 1px rgba(153,153,153,0.75);
-}
-
-.photography {
-	background:linear-gradient(rgba(179,198,211,1), rgba(179,198,211,0.75));
-	box-shadow:1px 1px rgba(153,153,153,0.75);
-}
-
-.paper {
-	background:linear-gradient(rgba(127,139,194,1), rgba(127,139,194,0.75));
-	box-shadow:1px 1px rgba(153,153,153,0.75);
-}
-
-.inspiration {
-	background:linear-gradient(rgba(88,82,137,1), rgba(88,82,137,0.75));
-	box-shadow:1px 1px rgba(153,153,153,0.75);
-}
-
-.contact {
-	background:linear-gradient(rgba(145,112,100,1), rgba(145,112,100,0.75));
-	box-shadow:1px 1px rgba(153,153,153,0.75);
+.experience > div:hover {
+	border:1px solid rgb(245,211,0);
 }
 
 .link {
 	text-decoration:none;
+	color:rgb(0,0,0);
+}
+
+.experience > div > a > h2 {
+	padding:20px 10px 0 10px;
+	font-family:'Open Sans', sans-serif;
+	font-size:1.1em;
+	font-weight:bold;
+	text-transform:uppercase;
+	text-align:center;
+}
+
+.experience > div > a:hover > h2 {
+	color:rgb(245,211,0);
+}
+
+.experience > div > a > p {
+	padding:10px 20px 20px 20px;
+	font-family:'Open Sans', sans-serif;
+	font-size:1em;
+	line-height:1.5em;
+	text-align:center;
+}
+
+.experience > div > a:hover > p {
 	color:rgb(153,153,153);
 }
 
-.blocks > div > a {
-	padding:10px;
-	font-size:2em;
-	text-decoration:none;
-	color:rgb(255,255,255);
-	border-right:1px solid rgb(153,153,153);
-	border-bottom:1px solid rgb(153,153,153);
-	border-radius:5px;
-}
-
-.blocks > div > h2 {
-	padding-top:20px;
+.summary > p {
+	padding:20px 20px 10px 20px;
 	font-family:'Open Sans', sans-serif;
-	font-size:1.2em;
-	font-weight:bold;
-	text-transform:uppercase;
+	font-size:1em;
+	line-height:1.5em;
+	text-align:left;
 }
 
-.blocks > div > p {
+.projects > p {
 	padding:10px 20px 20px 20px;
 	font-family:'Open Sans', sans-serif;
 	font-size:1em;
 	line-height:1.5em;
 	text-align:left;
-	color:rgb(102,102,102);
 }
 
-.quote > p {
-	margin-top:20px;
-	font-family:'Open Sans', sans-serif;
-	font-size:1.1em;
-	line-height:1.7em;
-	text-align:center;
+.projects > p > a:hover {
+	color:rgb(245,211,0);
 }
 
-.footer > p {
-	padding:20px;
+.summary > img {
+	width:120px;
+	margin:20px;
+	padding:5px;
+	float:left;
+	border:1px solid rgb(153,153,153);
+	border-radius:50%;	
+}
+
+.projects > img {
+	width:120px;
+	margin:10px 20px 20px 20px;
+	padding:5px;
+	float:right;
+	border:1px solid rgb(153,153,153);
+	border-radius:50%;
+}
+
+.footer {
+	display:flex;
+	flex-direction:row;
+	flex-wrap:wrap;
+	justify-content:space-between;
+	padding:10px 20px 20px 20px;
+}
+
+.footer > div > p {
 	font-family:'Open Sans', sans-serif;
 	font-size:0.9em;
-	line-height:1.4em;
-	text-align:center;
+}
+
+.footer > div > a {
+	margin-right:10px;
+	font-size:1.2em;
+	color:rgb(0,0,0);
+}
+
+.footer > div > a:hover {
+	color:rgb(245,211,0);
 }
 
 }
