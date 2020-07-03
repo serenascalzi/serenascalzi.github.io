@@ -1,0 +1,105 @@
+### Windows #####################################
+
+# Thumbnails
+Thumbs.db
+ehthumbs.db
+
+# Folder config
+Desktop.ini
+
+# Deletion cache (file shares, drives)
+$RECYCLE.BIN/
+
+# Installers
+*.cab
+*.msi
+*.msm
+*.msp
+*.iso
+
+# Shortcuts
+*.lnk
+
+### OSX #########################################
+
+# Thumbnails
+.DS_Store
+.DS_Store?
+
+# Folder config (search)
+.Spotlight-V100
+
+# Deletion cache (file shares, drives)
+.Trashes
+
+# Installers
+*.dmg
+*.img
+
+# OS meta
+.AppleDouble
+.LSOverride
+
+# AFP share
+.AppleDB
+.AppleDesktop
+.apdisk
+
+### General (OS-agnostic) #######################
+
+# Thumbnails
+._*
+*~
+
+# Editor caches
+*/**/*.swp
+*.swp
+
+# Editor configs
+.brackets.json
+.project
+.settings
+.idea
+*.iml
+.codekit
+*.codekit
+nb-actions*.xml
+nbactions*.xml
+nb-configuration.xml
+
+# Compiled source
+*.com
+*.class
+*.dll
+*.exe
+*.o
+*.so
+*.classpath
+*.prefs
+*.jar
+
+# Zipped archives
+*.7z
+*.gz
+*.rar
+*.tar
+*.zip
+
+# VCS caches (unused)
+.accurev/
+.acignore
+
+# Publication files
+*.pmd
+
+# Build-process artifacts
+target/
+build/
+private/
+
+# Miscellaneous
+notes/
+generated/
+.vlt
+instances
+
