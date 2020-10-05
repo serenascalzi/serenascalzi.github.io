@@ -4,4 +4,4 @@
 About Me for Serena Scalzi
 
 ## Credits
-Photo by Cassie Boca on Unsplash.
+Photo by Bongkarn Thanyakij on Pexels.
