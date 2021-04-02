@@ -4,4 +4,4 @@
 About Me for Serena Scalzi
 
 ## Credits
-Photo by Bongkarn Thanyakij on Pexels.
+Photo by UNLV Photo Services on PhotoShelter.
