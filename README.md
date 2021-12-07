@@ -4,4 +4,4 @@
 About Me for Serena Scalzi
 
 ## Credits
-Photo by UNLV Photo Services on PhotoShelter.
+Photo by Joanna Kosinska on Unsplash.
