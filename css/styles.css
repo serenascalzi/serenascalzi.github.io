@@ -89,6 +89,10 @@ header {
   color: #FFFFF0;
 }
 
+.profile {
+    text-align: left;
+  }
+
 /* PROJECTS */
 .projects {
   background: #FFFFF0;
