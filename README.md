@@ -7,4 +7,4 @@ About Me for Serena Scalzi
 Photo by Joanna Kosinska on Unsplash.
 
 ## Updates
-Last Updated on January 23, 2024
+Last Updated on January 25, 2025
